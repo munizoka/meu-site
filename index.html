@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Para minha namorada 💖</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: pink;
+    }
+    h1 {
+      margin-top: 50px;
+    }
+    button {
+      font-size: 20px;
+      padding: 10px 20px;
+      margin: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    #sim {
+      background-color: lightgreen;
+    }
+    #nao {
+      background-color: lightcoral;
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+  <h1>Você me ama? 💘</h1>
+  <button id="sim" onclick="alert('Eu sabia que você diria SIM! 😍')">Sim</button>
+  <button id="nao" onmouseover="fugir()">Não</button>
+
+  <script>
+    function fugir() {
+      let botao = document.getElementById("nao");
+      let x = Math.random() * window.innerWidth - 100;
+      let y = Math.random() * window.innerHeight - 50;
+      botao.style.left = x + "px";
+      botao.style.top = y + "px";
+    }
+  </script>
+</body>
+</html>
